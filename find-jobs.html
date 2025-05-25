@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header fixed-header">
+    <div class="header-left">
+        <!-- Update logo path if needed -->
+        <img src="logo.png" alt="Buland Consultants Logo" class="logo" loading="lazy">
+        <div class="header-text">
+            <h1>Buland Consultants</h1>
+            <p class="tagline">"Aap Ki Safalta Ka Sathi......!!"</p>
+        </div>
+    </div>
+    <button class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+    <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li><a href="our-services.html" class="nav-link">Our Services</a></li>
+            <li><a href="find-candidates.html" class="nav-link">Find Candidates</a></li>
+            <li><a href="find-jobs.html" class="nav-link">Find Jobs</a></li>
+            <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- For Job Seekers -->
+<br></br>
+<br></br>
+<main class="container">
+        <div class="form-intro">
+            <h2>Apply for Jobs</h2>
+            <p>Fill out the form below to apply for your desired job. We will review your application and get back to you shortly.</p>
+        </div>
+
+        <div class="form-container">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSexrT9n42Wj6aXTIj_85jbWSi8p3e49dARsswWEjC5WTtC7JA/viewform?embedded=true" 
+                width="640" 
+                height="1386" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading…
+            </iframe>
+        </div>
+    </main>
+    <STYle>
+        /* Main content container */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        /* Form introduction */
+        .form-intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Responsive iframe container */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-container iframe {
+            border: none;
+            width: 100%;
+            max-width: 640px; /* Matches your form width */
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 10px;
+            }
+            
+            .form-container iframe {
+                height: 1200px; /* Adjust height for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .form-container iframe {
+                height: 1000px;
+            }
+        }
+</STYle>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Our Services.html">Our Services</a></li>
+                <li><a href="Find Candidates.html">Find Candidates</a></li>
+                <li><a href="Find Jobs.html">Find Jobs</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#">Job Consultancy</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Design Solutions</a></li>
+                <li><a href="#">Career Counseling</a></li>
+                <li><a href="#">Recruitment</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> Your Company Address</li>
+                <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+123 456 7890</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+                <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <div class="newsletter">
+                <h4>Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Buland Consultants. All Rights Reserved.</p>
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Sitemap</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
